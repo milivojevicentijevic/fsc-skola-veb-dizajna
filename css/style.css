@@ -2,7 +2,112 @@
 /************************
 basic styles
 ************************/
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  color: #444;
+}
+
+a {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
 /************************
 navbar
 ************************/
+nav img {
+  width: 150px;
+}
+
+nav .nav-link {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+nav .nav-link:hover {
+  color: #d8303e;
+}
+
+nav .active .nav-link {
+  color: #c1262e;
+}
+
+/************************
+mainHeader
+************************/
+.mainHeader {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(35, 31, 32, 0.5)), to(rgba(35, 31, 32, 0.5))), url(../img/skola-veb-dizajna-header.jpg);
+  background-image: linear-gradient(rgba(35, 31, 32, 0.5), rgba(35, 31, 32, 0.5)), url(../img/skola-veb-dizajna-header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.mainHeader .container {
+  height: 100vh;
+}
+
+.mainHeader .container .col-md-4 {
+  background-color: rgba(193, 38, 46, 0.7);
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+}
+
+.mainHeader .container .col-md-4 a {
+  color: #fff;
+}
+
+/************************
+footer
+************************/
+footer {
+  background-color: #f3f3f3;
+}
+
+footer .container:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-bottom: 1px solid rgba(68, 68, 68, 0.2);
+}
+
+footer .container:first-child div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+}
+
+footer .container:first-child div img {
+  width: 150px;
+}
+
+footer .container:first-child div a {
+  color: #343434;
+}
+
+footer .container:first-child div a:hover {
+  color: #d8303e;
+}
+
+footer .container:first-child div ul {
+  line-height: 2;
+}
+
+footer .container:first-child div h4 {
+  font-size: 1.5rem;
+}
 /*# sourceMappingURL=style.css.map */

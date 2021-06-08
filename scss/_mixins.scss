@@ -1,0 +1,12 @@
+@mixin bgPosition($position, $size, $height : 100vh) {
+    background-position: $position;
+    background-size: $size;
+    height: $height;
+}
+@mixin flex($justify, $align, $direction : row) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}

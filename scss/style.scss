@@ -3,7 +3,77 @@
 /************************
 basic styles
 ************************/
-
+body {
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    color: $text;
+}
+a {
+    transition: $transition;
+}
 /************************
 navbar
 ************************/
+nav {
+    img {
+        width: 150px;
+    }
+    .nav-link {
+        color: $white;
+        text-transform: uppercase;
+        &:hover {
+            color: $red;
+        }
+    }
+    .active {
+        .nav-link {
+            color: $red2;
+        }
+    }
+}
+/************************
+mainHeader
+************************/
+.mainHeader {
+    background-image: linear-gradient(rgba($black, .5), rgba($black, .5)), url(../img/skola-veb-dizajna-header.jpg);
+    @include bgPosition(center, cover);
+    .container {
+        height: 100vh;
+        .col-md-4 {
+            background-color: rgba($red2, .7);
+            flex: 0 0 30%;
+            a {
+                color: $white;
+            }
+        }
+    }
+}
+/************************
+footer
+************************/
+footer {
+    background-color: $lightgray;
+    .container:first-child {
+        @include flex(space-between, flex-start);
+        border-bottom: 1px solid rgba($text, .2);
+        div {
+            flex: 0 0 20%;
+            img {
+                width: 150px;
+            }
+            a {
+                color: $link;
+                &:hover {
+                    color: $red;
+                }
+            }
+            ul {
+                line-height: 2;
+            }
+            h4 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
