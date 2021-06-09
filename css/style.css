@@ -13,6 +13,24 @@ a {
   transition: 0.3s ease;
 }
 
+.py-5 {
+  padding: 100px 0 !important;
+}
+
+.underline, h2:after {
+  display: block;
+  content: "";
+  width: 200px;
+  height: 5px;
+  background: -webkit-gradient(linear, left top, right top, from(#d8303e), color-stop(#c1262e), to(#a72230));
+  background: linear-gradient(to right, #d8303e, #c1262e, #a72230);
+  margin: 20px auto;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
 /************************
 navbar
 ************************/
@@ -37,9 +55,9 @@ nav .active .nav-link {
 mainHeader
 ************************/
 .mainHeader {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(35, 31, 32, 0.5)), to(rgba(35, 31, 32, 0.5))), url(../img/skola-veb-dizajna-header.jpg);
-  background-image: linear-gradient(rgba(35, 31, 32, 0.5), rgba(35, 31, 32, 0.5)), url(../img/skola-veb-dizajna-header.jpg);
-  background-position: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(35, 31, 32, 0.3)), to(rgba(35, 31, 32, 0.3))), url(../img/skola-veb-dizajna-header.jpg);
+  background-image: linear-gradient(rgba(35, 31, 32, 0.3), rgba(35, 31, 32, 0.3)), url(../img/skola-veb-dizajna-header.jpg);
+  background-position: 50% 0;
   background-size: cover;
   height: 100vh;
 }
@@ -49,7 +67,7 @@ mainHeader
 }
 
 .mainHeader .container .col-md-4 {
-  background-color: rgba(193, 38, 46, 0.7);
+  background-color: rgba(193, 38, 46, 0.85);
   -webkit-box-flex: 0;
       -ms-flex: 0 0 30%;
           flex: 0 0 30%;
@@ -109,5 +127,112 @@ footer .container:first-child div ul {
 
 footer .container:first-child div h4 {
   font-size: 1.5rem;
+}
+
+/************************
+onama
+************************/
+.onama .col-md-6 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 47%;
+          flex: 0 0 47%;
+}
+
+/************************
+kursevi
+************************/
+.kursevi {
+  background-color: #d8303e;
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+          clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+}
+
+.kursevi .card img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.kursevi .card button {
+  background-color: #231f20;
+  color: #fff;
+  padding: 10px 40px;
+  font-size: 1rem;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  padding: 10px 20px;
+}
+
+.kursevi .card button:hover {
+  background: #d8303e;
+}
+
+/************************
+blog
+************************/
+.blog .card {
+  position: relative;
+}
+
+.blog .card .meta {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(193, 38, 46, 0.85);
+}
+
+.blog .card .meta p {
+  margin-bottom: 0;
+  padding: 10px;
+  color: #fff;
+}
+
+.blog .card .meta p a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.blog .card .meta p a:hover {
+  text-decoration: none;
+}
+
+.blog .card .holder {
+  overflow: hidden;
+}
+
+.blog .card .holder img {
+  -webkit-transition: -webkit-transform .5s linear;
+  transition: -webkit-transform .5s linear;
+  transition: transform .5s linear;
+  transition: transform .5s linear, -webkit-transform .5s linear;
+}
+
+.blog .card .holder img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.blog .card .card-body {
+  padding: 30px;
+}
+
+.blog .card .card-body button {
+  background-color: #d8303e;
+  color: #fff;
+  padding: 10px 40px;
+  font-size: 1rem;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.blog .card .card-body button:hover {
+  background: #231f20;
 }
 /*# sourceMappingURL=style.css.map */

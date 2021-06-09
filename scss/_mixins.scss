@@ -10,3 +10,16 @@
     align-items: $align;
     flex-direction: $direction;
 }
+@mixin btn($bg, $color, $bgHover) {
+    background-color: $bg;
+    color: $color;
+    padding: 10px 40px;
+    font-size: 1rem;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: $transition;
+    &:hover {
+        background: $bgHover;
+    }
+}

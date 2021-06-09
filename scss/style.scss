@@ -11,6 +11,23 @@ body {
 a {
     transition: $transition;
 }
+.py-5 {
+    padding: 100px 0 !important;
+}
+.underline {
+    display: block;
+    content: "";
+    width: 200px;
+    height: 5px;
+    background: linear-gradient(to right, $red, $red2, $red3);
+    margin: 20px auto;
+}
+h2 {
+    font-size: 3rem;
+    &:after {
+        @extend .underline;
+    }
+}
 /************************
 navbar
 ************************/
@@ -35,12 +52,12 @@ nav {
 mainHeader
 ************************/
 .mainHeader {
-    background-image: linear-gradient(rgba($black, .5), rgba($black, .5)), url(../img/skola-veb-dizajna-header.jpg);
-    @include bgPosition(center, cover);
+    background-image: linear-gradient(rgba($black, .3), rgba($black, .3)), url(../img/skola-veb-dizajna-header.jpg);
+    @include bgPosition(50% 0, cover);
     .container {
         height: 100vh;
         .col-md-4 {
-            background-color: rgba($red2, .7);
+            background-color: rgba($red2, .85);
             flex: 0 0 30%;
             a {
                 color: $white;
@@ -76,4 +93,70 @@ footer {
         }
     }
 }
-
+/************************
+onama
+************************/
+.onama {
+    .col-md-6 {
+        flex: 0 0 47%;
+    }
+}
+/************************
+kursevi
+************************/
+.kursevi {
+    background-color: $red;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+    .card {
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        button {
+            @include btn($black, $white, $red);
+            padding: 10px 20px;
+        }
+    }
+}
+/************************
+blog
+************************/
+.blog {
+    .card {
+        position: relative;
+        .meta {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: rgba($red2, .85);
+            p {
+                margin-bottom: 0;
+                padding: 10px;
+                color: $white;
+                a {
+                    color: $white;
+                    text-decoration: underline;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .holder {
+            overflow: hidden;
+            img {
+                transition: transform .5s linear;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+        .card-body {
+            padding: 30px;
+            button {
+                @include btn($red, $white, $black);
+            }
+        }
+    }
+}
