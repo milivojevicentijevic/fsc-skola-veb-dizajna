@@ -60,6 +60,7 @@ mainHeader
   background-position: 50% 0;
   background-size: cover;
   height: 100vh;
+  background-repeat: no-repeat;
 }
 
 .mainHeader .container {
@@ -234,5 +235,91 @@ blog
 
 .blog .card .card-body button:hover {
   background: #231f20;
+}
+
+/************************
+onamaHeader
+************************/
+.onamaHeader {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(35, 31, 32, 0.3)), to(rgba(35, 31, 32, 0.3))), url(../img/onama.jpg);
+  background-image: linear-gradient(rgba(35, 31, 32, 0.3), rgba(35, 31, 32, 0.3)), url(../img/onama.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+  background-repeat: no-repeat;
+}
+
+.onamaHeader h1 {
+  font-size: 5rem;
+}
+
+/************************
+onamaUvod
+************************/
+.onamaUvod h3 {
+  color: #d8303e;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/************************
+ctaKursevi
+************************/
+.ctaKursevi {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(35, 31, 32, 0.3)), to(rgba(35, 31, 32, 0.3))), url(../img/ctakursevi.jpg);
+  background-image: linear-gradient(rgba(35, 31, 32, 0.3), rgba(35, 31, 32, 0.3)), url(../img/ctakursevi.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+  background-repeat: no-repeat;
+  -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+          clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.ctaKursevi button {
+  background-color: #d8303e;
+  color: #fff;
+  padding: 10px 40px;
+  font-size: 1rem;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.ctaKursevi button:hover {
+  background: #a72230;
+}
+
+/************************
+predavaci
+************************/
+.predavaci .card {
+  border: 1px solid #231f20;
+}
+
+.predavaci .card img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.predavaci .card button {
+  background-color: #d8303e;
+  color: #fff;
+  padding: 10px 40px;
+  font-size: 1rem;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  padding: 10px 20px;
+}
+
+.predavaci .card button:hover {
+  background: #d8303e;
 }
 /*# sourceMappingURL=style.css.map */

@@ -2,6 +2,7 @@
     background-position: $position;
     background-size: $size;
     height: $height;
+    background-repeat: no-repeat;
 }
 @mixin flex($justify, $align, $direction : row) {
     display: flex;
